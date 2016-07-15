@@ -26,3 +26,12 @@ var Hello = React.createClass({
         } < /div>;
     }
 })
+
+var Footer = React.createClass({
+    render: function () {
+        return <footer > & copy;
+        2016 {
+            this.props.author
+        } < /footer>;
+    }
+});
