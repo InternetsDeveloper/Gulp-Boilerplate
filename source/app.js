@@ -43,5 +43,9 @@ ReactDOM.render( < Navbar appName = "Sup"
 );
 
 ReactDOM.render( < Hello name = "World" / > ,
+    document.getElementById('container')
+);
+
+ReactDOM.render( < Footer author = "InternetsDeveloper" / > ,
     document.getElementById('footer-container')
 );
