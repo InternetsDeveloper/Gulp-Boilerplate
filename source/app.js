@@ -17,5 +17,12 @@ var NavBar = React.createClass({
             } < /a></li >
             < /ul> < /nav > ;
     }
-
 });
+
+var Hello = React.createClass({
+    render: function () {
+        return <div > Hello {
+            this.props.name
+        } < /div>;
+    }
+})
