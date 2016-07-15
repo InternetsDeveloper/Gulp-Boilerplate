@@ -35,3 +35,9 @@ var Footer = React.createClass({
         } < /footer>;
     }
 });
+
+ReactDOM.render( < Navbar appName = "Sup"
+    home = "home"
+    contact = "contact" / >
+    document.getElementById('navbar-container')
+)
