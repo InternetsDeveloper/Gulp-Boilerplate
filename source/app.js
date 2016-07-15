@@ -25,7 +25,7 @@ var Hello = React.createClass({
             this.props.name
         } < /div>;
     }
-})
+});
 
 var Footer = React.createClass({
     render: function () {
@@ -38,6 +38,10 @@ var Footer = React.createClass({
 
 ReactDOM.render( < Navbar appName = "Sup"
     home = "home"
-    contact = "contact" / >
+    contact = "contact" / > ,
     document.getElementById('navbar-container')
-)
+);
+
+ReactDOM.render( < Hello name = "World" / > ,
+    document.getElementById('footer-container')
+);
