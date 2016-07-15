@@ -20261,7 +20261,7 @@
         });
 
         ReactDOM.render(React.createElement(NavBar, {
-            appName: 'yo',
+            appName: 'sup',
             home: 'home',
             contact: 'reachout'
         }), document.getElementById('navbar-container'));
@@ -20271,7 +20271,7 @@
         }), document.getElementById('container'));
 
         ReactDOM.render(React.createElement(Footer, {
-            author: 'codeforcoffee'
+            author: 'InternetsDeveloper'
         }), document.getElementById('footer-container'));
 
 }, {
