@@ -26,19 +26,19 @@ gulp.task('default', function () {
 
             console.log('Gulpfile loaded.  Ready to run tasks.');
 
-            // global settings for gulp
+            // Global Settings
             var settings = {
                 scriptsFolder: 'scripts/',
                 distFolder: 'dist/'
             };
 
-            // watch for changes!
+            // Watch for Changes
             watch([settings.scriptsFolder + 'app/*.js'], function () {
-                console.log('oh snap! scripts have been changed... let us rebundle');
+                console.log('Changes have been made... One moment.');
                 gulp.start('default'); // run default task when changes occur
             });
 
-            // default gulp task
+            // Default Gulp Task
             gulp.task('default', function () {
                 return gulp.src([settings.scriptsFolder + 'lib/jquery.js', settings.scriptsFolder + 'app/*.js'])
                     .pipe(concat('distribution-app.js'))
