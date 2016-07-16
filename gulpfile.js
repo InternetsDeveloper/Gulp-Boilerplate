@@ -7,3 +7,8 @@ var browserify = require('browserify');
 // NOTES:
 //var uglify = require('gulp-uglify');
 //gulp.task(nameOfTask, callback);
+
+watch(['./source/app.js'], function () {
+    console.log("App has been changed; re-compiling for best results.");
+    gulp.start('default');
+});
