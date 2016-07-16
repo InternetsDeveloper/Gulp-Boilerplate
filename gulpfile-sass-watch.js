@@ -13,3 +13,14 @@ watcher(['./sass/*.scss'], function () {
 
 // Create task: 
 // Two Arg: Name(String), Callback(Function)
+
+gulp.task('default', function () {
+    console.log('Default task running.');
+});
+
+gulp.task('scss-2-css', function () {
+    //gulp find the src files
+    gulp.src('sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./css/'));
+});
